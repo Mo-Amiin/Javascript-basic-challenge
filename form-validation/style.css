@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.container{
+    background-color: #f9faf9;
+    border-radius: 10px;
+    box-shadow:0 1px 10px -4px rgba(0,0,0,0.3) ;
+    width: 400px;
+}
+
+.container h1{
+    text-align: center;
+    margin: 20px;
+}
+.form{
+    padding: 30px 40px ;
+}
+
+.form-control{
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.form-control label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #a7a1a0;
+} 
+
+.form-control i.fa-check{
+    position: absolute;
+    text-align: right;
+    color: #27b90d;
+    top: 35px;
+    bottom: 0;
+    right: 10px;
+    display: none;
+}
+.form-control i.fa-times{
+    position: absolute;
+    text-align: right;
+    color: #ec5a36;
+    top: 35px;
+    bottom: 0;
+    right: 10px;
+   display: none;
+}
+
+.form-control input:focus{
+    outline: none;
+    border: solid 1px #1d1a1a;
+}
+.form-control small{
+    color: #ce310a;
+    display: none;
+    /* display: block; */
+}
+.btn{
+   width: 100%;
+   padding: 10px 20px ;
+   background-color: #eb6416;;
+   border: none;
+   color: white;
+   cursor: pointer;
+   display: block;
+   border-radius: 4px;
+   outline: none;
+}
+.save:hover{   
+    opacity: 0.9;
+    color: white;
+    font-weight: blod 
+}
+.form-control.error  input{
+    border: 1px solid #d66346bd;;
+}
+.form-control.success input{
+    border: 1px solid #31ca15; 
+}
+
+
+.form.form-control.error small{
+    visibility: visible;
+}
+ 
